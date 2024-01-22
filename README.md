@@ -15,3 +15,20 @@ In modern warfare, distinguishing between friend and foe is critical. With vario
 - Creating a comprehensive dataset from publicly available images.
 - The inherent design of camouflage to obscure identification.
 - Dealing with images that may contain occlusions like equipment and debris.
+
+## Installation
+- TODO
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+- Special thanks to Professor Radha Pooveran for his invaluable insights and guidance.
+- Gratitude to the team members who have contributed to this project.
+
+
+## Team
+- Andrew Jeon
+- Bassam Halabiya
+- Naif A. Ganadily
+- Zachary Saunders
