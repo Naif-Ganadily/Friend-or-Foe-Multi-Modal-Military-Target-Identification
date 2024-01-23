@@ -1,17 +1,37 @@
 # https://docs.python.org/3/tutorial/errors.html
 
+import logging
 import sys
+import traceback
 
-def error_message_details(error, error_detail:sys):
-    _,_,exc_tb = error_detail.exc_info() # Get the exception traceback (file and line number)
-    error_message="Error: " + str(error) + " in " + str(exc_tb.tb_frame.f_code.co_filename) + " at line " + str(exc_tb.tb_lineno)
-    return error_message
+# Ensure that logging configurations are loaded
+from logger import LOG_FILE_PATH 
 
+logging.basicConfig(
+    filename=LOG_FILE_PATH,
+    format="[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+    level=logging.INFO,
+)
+
+# Custom Exception Class
 class CustomError(Exception):
-    def __init__(self, error, error_detail:sys):
-        self.error_message = error_message_details(error, error_detail)
-        super().__init__(self.error_message)
-
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message
 
     def __str__(self):
-        return self.error_message
+        return self.message
+
+def log_exception(exc_type, exc_value, exc_traceback):
+    logging.error("Exception occurred", exc_info=(exc_type, exc_value, exc_traceback))
+    raise CustomError(f"{exc_type.__name__}: {exc_value}")
+
+# Set the custom exception handler
+sys.excepthook = log_exception
+
+if __name__ == "__main__":
+    try:
+        a = 1 / 0
+    except Exception as e:
+        logging.info("Handling an exception")
+        raise
