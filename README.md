@@ -1,4 +1,4 @@
-## Adaptive Camouflage Recognition
+## Friend or Foe: Battlefield Adversary Detection
 
 
 ## Overview
