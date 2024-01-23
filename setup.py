@@ -15,10 +15,10 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name = 'Adaptive-Camouflage-Recognition',
+    name = 'Friend or Foe: Battlefield Adversary Detection',
     version = '0.0.1',
     authors= ['Andrew Jeon', 'Bassam Halabiya', 'Naif A. Ganadily', 'Zachary Saunders'],
-    authors_emails = ['TODO', 'TODO', 'ganadilynaif@gmail.com', 'TODO'],
+    authors_emails = ['andrewjjeon@gmail.com', 'b.halabiya@gmail.com', 'ganadilynaif@gmail.com', 'zacharydavidsaunders@gmail.com'],
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
 
