@@ -3,7 +3,7 @@
 
 import logging 
 import os
-import datetime import datetime
+from datetime import datetime
 
 LOG_FILE = f"{datetime.now().strftime('%Y-%m-%d')}.log"
 logs_path = os.path.join(os.getcwd(), "logs", LOG_FILE)
@@ -11,13 +11,10 @@ os.makedirs(os.path.dirname(logs_path), exist_ok=True)
 
 LOG_FILE_PATH = os.path.join(os.getcwd(), "logs", LOG_FILE)
 
-logging.basicConfiq(
-    filename= LOG_FILE_PATH,
-    format= "[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+logging.basicConfig(
+    filename=LOG_FILE_PATH,
+    format="[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
     level=logging.INFO,
-
-
-
 )
 
 if __name__=="__main__":
