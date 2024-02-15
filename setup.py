@@ -15,7 +15,7 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name = 'Friend or Foe: Battlefield Adversary Detection',
+    name = 'Friend or Foe - Multi-Modal Military Target Identification',
     version = '0.0.1',
     authors= ['Andrew Jeon', 'Bassam Halabiya', 'Naif A. Ganadily', 'Zachary Saunders'],
     authors_emails = ['andrewjjeon@gmail.com', 'b.halabiya@gmail.com', 'ganadilynaif@gmail.com', 'zacharydavidsaunders@gmail.com'],
