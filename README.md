@@ -1,4 +1,4 @@
-## Friend or Foe: Battlefield Adversary Detection
+## Friend or Foe - Multi-Modal Military Target Identification
 
 
 ## Overview
