@@ -8,7 +8,7 @@ The datasets are hosted on Google Drive and can be accessed through the followin
 
 [Access Andrew's Dataset] TODO
 
-[Access Bassam's Dataset] (https://drive.google.com/drive/folders/1m1_gAHyORRBPPhwX3bzDZ_XGHwGguQvl?usp=sharing)
+[Access Bassam's Dataset](https://drive.google.com/drive/folders/1m1_gAHyORRBPPhwX3bzDZ_XGHwGguQvl?usp=sharing)
 
 [Access Naif's Dataset](https://drive.google.com/drive/folders/1NnWoSyfbCSW_mvzjSiorXEkIngyX8ooO?usp=sharing)
 
