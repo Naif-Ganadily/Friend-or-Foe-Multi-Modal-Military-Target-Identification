@@ -1,4 +1,20 @@
 numpy
+ultralytics
+clearml # If we use the optimization feature
+matplotlib
+opencv-python
+pandas 
+pillow
+psutil
+py-cpuinfo 
+pyyaml
+requests
+scipy
+seaborn 
+thop
+torch
+torchvision 
+tqdm
 opencv-python
 -e .
 
