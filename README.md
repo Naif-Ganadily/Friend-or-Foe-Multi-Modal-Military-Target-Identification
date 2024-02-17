@@ -1,6 +1,8 @@
 ## Friend or Foe - Multi-Modal Military Target Identification
 
 
+![Friend or Foe Banner](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/103202628/9612e483-3abf-4eee-b812-5fd434df96c2)
+
 ## Overview
 This project aims to develop a machine learning system capable of identifying military personnel in images as friend or foe with a degree of certainty. This AI system is intended to assist soldiers in high-stress environments by reducing the risk of human error in target identification.
 
