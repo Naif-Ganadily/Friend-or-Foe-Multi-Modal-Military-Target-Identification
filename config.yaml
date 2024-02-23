@@ -1,0 +1,9 @@
+path: C:\Users\Andrew Jeon\OneDrive\Desktop\friendfoe
+train: images\train # train images (relative to path)
+val: images\valid  # val images (relative to path)
+test: images\test
+
+# Classes
+names:
+  0: RU_military
+  1: US_military
