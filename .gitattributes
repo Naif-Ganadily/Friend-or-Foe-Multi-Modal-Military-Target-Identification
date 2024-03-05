@@ -1,2 +1,5 @@
+best.pt filter=lfs diff=lfs merge=lfs -text
+last.pt filter=lfs diff=lfs merge=lfs -text
+*yolov8x.pt filter=lfs diff=lfs merge=lfs -text
 *.pt filter=lfs diff=lfs merge=lfs -text
 .pt filter=lfs diff=lfs merge=lfs -text
