@@ -1,17 +1,22 @@
-numpy
-streamlit
-ultralytics
+# Base ----------------------------------------
 matplotlib
-opencv-python
-pandas 
-pillow
-psutil
-pyyaml
+numpy
+opencv-python-headless
+Pillow
+PyYAML
 requests
+ultralytics
 scipy
 torch
-seaborn
+torchvision
 tqdm
-opencv-python
+protobuf<4.21.5  # https://github.com/ultralytics/yolov5/issues/8012
+pandas
+seaborn
+ipython  # interactive notebook
+psutil  # system utilization
+thop  # FLOPs computation
+streamlit
+wget
 -e .
 

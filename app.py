@@ -1,67 +1,89 @@
-# Experimenting with Streamlit 
-# Template TODO until we decide on the model and the data
-
+import glob
 import streamlit as st
 from PIL import Image
+import torch
 import cv2
 import os
-import torch
+import time
+from ultralytics import YOLO
 
 
+# Set the page configuration
+st.set_page_config(layout="wide", page_title="Friend or Foe 🌟", page_icon="🌟")
 
-# Set the page layout and title
-st.set_page_config(layout="wide", page_title="🔍 Friend or Foe Detection 🎖️")
-
-# The model path
-cfg_model_path = 'models/naif_models/yolov8x_2classes_25epochs/best.pt'  
 model = None
+confidence = 0.25
 
-# Function to load the model with a message
-@st.cache(allow_output_mutation=True)
-def load_model(path):
-    try:
-        with st.spinner('Loading model... 🚀'):
-            model = torch.hub.load('ultralytics/yolov8', 'custom', path=path, force_reload=True)
-        return model
-    except Exception as e:
-        st.error(f"Failed to load model: {e}")
-        return None
+def save_uploaded_file(directory, img_bytes):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    img_file_path = os.path.join(directory, "upload." + img_bytes.name.split('.')[-1])
+    with open(img_file_path, "wb") as f:
+        f.write(img_bytes.getbuffer())
+    return img_file_path
 
-# Function to display the image and model predictions
-def display_image_and_predictions(img_path, model):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image(img_path, caption="Uploaded Image 📷")
-    with col2:
-        st.write("Analyzing... ⚔️ Please wait!")
-        img = infer_image(img_path, model)
-        st.image(img, caption="Detection Results 🛡️")
+def image_input(img_file):
+    if img_file:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(img_file, caption="Your Selected Image 📸")
+        with col2:
+            if model is not None:
+                st.markdown("### Model Predictions 🎯")
+                infer_image(img_file)
+            else:
+                st.error("Model not loaded. Please upload a model.")
 
-# Updated model inference function
-def infer_image(img_path, model):
+def infer_image(img_path):
     img = cv2.imread(img_path)
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    results = model(img_rgb)
-    results.render() 
-    img_pil = Image.fromarray(cv2.cvtColor(results.imgs[0], cv2.COLOR_BGR2RGB))
-    return img_pil
+    try:
+        if model is not None:
+            model.eval()
+            with torch.no_grad():
+                results = model([img_rgb])[0]
+                for result in results:
+                    # Visualization logic or result processing
+                    pass
+            st.image(img_rgb, caption="Inference Results")
+    except Exception as e:
+        st.error(f"Error processing image: {e}")
+
+@st.cache_data 
+def load_uploaded_model(model_file):
+    try:
+        model_ = torch.load(model_file, map_location=torch.device('cpu'))
+        model_.eval()
+        return model_, None
+    except Exception as e:
+        return None, str(e)
+
+def get_user_model():
+    model_bytes = st.sidebar.file_uploader("Upload a .pt Model File", type=['pt'])
+    if model_bytes:
+        directory = "uploaded_models"
+        model_file = save_uploaded_file(directory, model_bytes)
+        loaded_model, error_message = load_uploaded_model(model_file)
+        if error_message:
+            st.sidebar.error(f"Failed to load model: {error_message}")
+        else:
+            st.sidebar.success("Model uploaded and loaded successfully!")
+            return loaded_model
+    return None
 
 def main():
     global model
 
-    st.title("🔍 Friend or Foe Detection Dashboard 🎖️")
+    st.title("🌟 Friend or Foe Dashboard 🌟")
+    st.sidebar.title("🛠 Configuration 🛠")
 
-    if not os.path.isfile(cfg_model_path):
-        st.warning("Model file not available! Please check the path. 🚫")
-    else:
-        model = load_model(cfg_model_path)
+    model = get_user_model()  # Load the model
 
-    img_file_buffer = st.file_uploader("Upload an image 🖼️ (png, jpeg, jpg)", type=['png', 'jpeg', 'jpg'])
-    if img_file_buffer is not None:
-        img_path = "temp_uploaded_image." + img_file_buffer.name.split('.')[-1]
-        with open(img_path, 'wb') as f:
-            f.write(img_file_buffer.getbuffer())
-        display_image_and_predictions(img_path, model)
+    if model:
+        img_bytes = st.file_uploader("Upload an image here:", type=['png', 'jpeg', 'jpg'])
+        if img_bytes:
+            img_file = save_uploaded_file("temp_images", img_bytes)
+            image_input(img_file)
 
 if __name__ == "__main__":
     main()
