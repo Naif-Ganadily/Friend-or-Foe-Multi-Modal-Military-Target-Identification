@@ -3,9 +3,9 @@
 
 import streamlit as st
 from PIL import Image
-import torch
 import cv2
 import os
+import torch
 
 
 
@@ -19,9 +19,13 @@ model = None
 # Function to load the model with a message
 @st.cache(allow_output_mutation=True)
 def load_model(path):
-    with st.spinner('Loading model... 🚀'):
-        model = torch.hub.load('ultralytics/yolov8', 'custom', path=path, force_reload=True)
-    return model
+    try:
+        with st.spinner('Loading model... 🚀'):
+            model = torch.hub.load('ultralytics/yolov8', 'custom', path=path, force_reload=True)
+        return model
+    except Exception as e:
+        st.error(f"Failed to load model: {e}")
+        return None
 
 # Function to display the image and model predictions
 def display_image_and_predictions(img_path, model):
