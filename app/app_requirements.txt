@@ -1,0 +1,6 @@
+streamlit
+pillow
+ultralytics
+opencv-python
+pytube
+PIL
