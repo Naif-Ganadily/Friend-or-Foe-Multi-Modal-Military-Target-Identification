@@ -6,7 +6,7 @@ The Friend or Foe: Multi-Modal Military Target Identification project utilizes a
 
 The datasets are hosted on Google Drive and can be accessed through the following links:
 
-[Access Andrew's Dataset (Images)](https://app.roboflow.com/andrew-xku7z/ff-mmmti-egyc3/browse) <br>
+[Andrew's Dataset (Images)](https://app.roboflow.com/andrew-xku7z/ff-mmmti-egyc3/browse) <br>
 [Andrew's Spreadsheet of the Sources]()
 
 [Bassam's Dataset](https://drive.google.com/drive/folders/1m1_gAHyORRBPPhwX3bzDZ_XGHwGguQvl?usp=sharing)
