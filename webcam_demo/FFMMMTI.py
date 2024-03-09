@@ -119,7 +119,7 @@ def main():
     model = get_roboflow_model(
         model_id="{}/{}".format(model_name, model_version),
         # Replace ROBOFLOW_API_KEY with your Roboflow API Key
-        api_key="4jupwNwlG314H77xljNw"
+        api_key="API-KEY"
     )
 
     # Define flag for inference/AI mode
