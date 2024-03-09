@@ -119,7 +119,7 @@ def main():
     model = get_roboflow_model(
         model_id="{}/{}".format(model_name, model_version),
         # Replace ROBOFLOW_API_KEY with your Roboflow API Key
-        api_key="API-KEY"
+        api_key="4jupwNwlG314H77xljNw"
     )
 
     # Define flag for inference/AI mode
@@ -210,12 +210,27 @@ def main():
                             print("Kill socket because response was received")
                             CRS_mode_flag = not CRS_mode_flag
                             server_socket.close()
-                    # Close socket after X number of seconds
+
+                    # Close socket after 20 seconds
                     # Reset CRS flag and close the server socket
                     if CRS_mode_flag and elapsed_time > CRS_duration:
-                        print("Kill socket because of timeout")
-                        CRS_mode_flag = not CRS_mode_flag
-                        server_socket.close()  
+                        
+                        CRS_timeout_text = "Challenge timeout"
+                        cv2.putText(frame, CRS_timeout_text, (400, 350), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255, 255, 255), 2)
+
+                        # Start the CRS output display timer
+                        if CRS_output_display_start_time == 0:
+                            CRS_output_display_start_time = time.time()
+                        # calculate elapsed timer for CRS output on the webcam    
+                        CRS_elapsed_time = time.time() - CRS_output_display_start_time
+
+                        # Reset all relevant flags and timer after the specified duration
+                        # Close socket since respnse was received
+                        if CRS_elapsed_time > CRS_output_display_duration:
+                            CRS_output_display_start_time = 0
+                            print("Kill socket because of timeout")
+                            CRS_mode_flag = not CRS_mode_flag
+                            server_socket.close()  
 
             # Display the resulting frame
             cv2.imshow('Webcam Feed', frame)
