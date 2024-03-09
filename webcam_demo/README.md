@@ -1,4 +1,3 @@
 ## Friend or Foe - Multi-Modal Military Target Identification Webcam Demo Script
 
-
-![Demo script flow diagram](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/103202628/9612e483-3abf-4eee-b812-5fd434df96c2)
+![FlowDiagram_WebcamDemo drawio](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/401c1fcc-d740-40aa-9f0d-2adfae329804)
