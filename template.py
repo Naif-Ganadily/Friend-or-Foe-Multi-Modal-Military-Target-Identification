@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-
+# To be Determined:
 project_name = "Friend or Foe - Multi-Modal Military Target Identification"
 
 list_of_files = [
