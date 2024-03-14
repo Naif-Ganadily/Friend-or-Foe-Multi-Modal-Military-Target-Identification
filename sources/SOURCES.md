@@ -6,14 +6,16 @@ The Friend or Foe: Multi-Modal Military Target Identification project utilizes a
 
 The datasets are hosted on Google Drive and can be accessed through the following links:
 
-[Access Andrew's Dataset] TODO
+[Andrew's Dataset (Images)](https://app.roboflow.com/andrew-xku7z/ff-mmmti-egyc3/browse) <br>
+[Andrew's Spreadsheet of the Sources]()
 
-[Access Bassam's Dataset](https://drive.google.com/drive/folders/1m1_gAHyORRBPPhwX3bzDZ_XGHwGguQvl?usp=sharing)
+[Bassam's Dataset](https://drive.google.com/drive/folders/1m1_gAHyORRBPPhwX3bzDZ_XGHwGguQvl?usp=sharing)
 
-[Access Naif's Dataset](https://drive.google.com/drive/folders/1NnWoSyfbCSW_mvzjSiorXEkIngyX8ooO?usp=sharing)
+[Naif's Dataset](https://drive.google.com/drive/folders/1NnWoSyfbCSW_mvzjSiorXEkIngyX8ooO?usp=sharing)
 
-[Access Zack's Dataset Spreadsheet of the Sources](https://docs.google.com/spreadsheets/d/1ZWLjBFVG45vz2s2NBBqVP17JqwVtR9svuBqUPJ02tws/edit#gid=0)
-[Access Zack's Dataset (Images)](https://universe.roboflow.com/usru-training-data/soliders-jqmnr/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
+[Zack's Dataset Spreadsheet of the Sources](https://docs.google.com/spreadsheets/d/1ZWLjBFVG45vz2s2NBBqVP17JqwVtR9svuBqUPJ02tws/edit#gid=0) <br>
+[Zack's Dataset (Images)](https://universe.roboflow.com/usru-training-data/soliders-jqmnr/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true)
+
 
 ## Contents of the Dataset
 
