@@ -26,18 +26,25 @@ In the complex and fast-paced environment of modern warfare, correctly distingui
 For showcasing the real-time application usage of the YOLOv8s trained model
 ![webcam_video_demo_FFMMMTI](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/90dd5774-6125-4f7c-b484-d7e788ebdb56)
 
+[Refer to the README.md in the webcam_demo folder](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/webcam_demo/README.md)
+
 For showcasing the image/video analysis (detection and segmentation) usage of the YOLOv8x trained model
 ![StreamlitDeploymentDemo](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/06a1e06f-f4b6-46db-b3de-17728a3bd228)
 
+[Refer to the README.md in the app folder](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/app/README.md)
+
 ## Installation and Usage 🔌
-- TODO
+- Clone the git
+- Follow the app and webcam_demo README files
+- Comply with the Disclaimer and Limitation of Liability as outlined, in accordance with the terms specified in the LICENSE.md.
 
 ## License 📄
-- TODO most probably Apache 2.0
+- CC BY-NC-SA 4.0 [Link to the LICENSE.md](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/LICENSE.md)
+- [Link to the documentation of the legal license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
 
 ## Acknowledgments 👏
-- A special thanks to Professor Radha Poovendran at the University of Washington Seattle, WA for his guidance.
-- Recognition to our team members – Andrew Jeon, Bassam Halabiya, Naif A. Ganadily and Zachary Saunders – whose collaborative efforts have driven this project forward.
+- Mention of Professor Radha Poovendran at the University of Washington, Seattle, WA, for his association with the project.
+- A big thank you to our team members – Andrew Jeon, Bassam Halabiya, Naif A. Ganadily, and Zachary Saunders – for their dedication and teamwork, which have been crucial in advancing this project.
 
 ## Disclaimer and Limitation of Liability ⚠️
 
