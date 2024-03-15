@@ -22,6 +22,13 @@ In the complex and fast-paced environment of modern warfare, correctly distingui
 - Dataset Preparation: Utilized Roboflow for dataset augmentation and preprocessing, enhancing the initial set of 1100 images to 2652 through techniques like random rotation, Gaussian blur, and noise addition, ensuring a diverse training set.
 - Model Training: Selected YOLOv8 variants for their balance between speed and accuracy, adapting model training to encompass a range of complexities from simple object detection to intricate segmentation tasks, demonstrating a nuanced understanding of model capabilities.
 
+## Proof of Concept
+For showcasing the real-time application usage of the YOLOv8s trained model
+![webcam_video_demo_FFMMMTI](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/90dd5774-6125-4f7c-b484-d7e788ebdb56)
+
+For showcasing the image/video analysis (detection and segmentation) usage of the YOLOv8x trained model
+![StreamlitDeploymentDemo](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/06a1e06f-f4b6-46db-b3de-17728a3bd228)
+
 ## Installation and Usage 🔌
 - TODO
 
