@@ -34,7 +34,9 @@ For showcasing the image/video analysis (detection and segmentation) usage of th
 [Refer to the README.md in the app folder](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/app/README.md)
 
 ## Installation and Usage 🔌
-- TODO
+- Clone the git
+- Follow the app and webcam_demo README files
+- Comply with the Disclaimer and Limitation of Liability as outlined, in accordance with the terms specified in the LICENSE.md.
 
 ## License 📄
 - CC BY-NC-SA 4.0 [Link to the LICENSE.md](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/LICENSE.md)
