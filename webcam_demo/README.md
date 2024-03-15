@@ -1,4 +1,4 @@
-## Friend or Foe - Multi-Modal Military Target Identification Webcam Demo Script
+# Webcam Demo - FFMMMTI
 
 ## Demo :movie_camera:
 ![webcam_video_demo](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/72592ca6-23e7-4f08-81c1-e2fccd30b905)
