@@ -26,7 +26,7 @@ In the complex and fast-paced environment of modern warfare, correctly distingui
 For showcasing the real-time application usage of the YOLOv8s trained model
 ![webcam_video_demo_FFMMMTI](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/90dd5774-6125-4f7c-b484-d7e788ebdb56)
 
-[Refer to the README.md in the app folder](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/app/README.md)
+[Refer to the README.md in the webcam_demo folder]([https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/app/README.md](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/webcam_demo/README.md))
 
 For showcasing the image/video analysis (detection and segmentation) usage of the YOLOv8x trained model
 ![StreamlitDeploymentDemo](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/29029748/06a1e06f-f4b6-46db-b3de-17728a3bd228)
