@@ -41,8 +41,8 @@ For showcasing the image/video analysis (detection and segmentation) usage of th
 - [Link to the documentation of the legal license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
 
 ## Acknowledgments 👏
-- A special thanks to Professor Radha Poovendran at the University of Washington Seattle, WA for his guidance.
-- Recognition to our team members – Andrew Jeon, Bassam Halabiya, Naif A. Ganadily and Zachary Saunders – whose collaborative efforts have driven this project forward.
+- Mention of Professor Radha Poovendran at the University of Washington, Seattle, WA, for his association with the project.
+- A big thank you to our team members – Andrew Jeon, Bassam Halabiya, Naif A. Ganadily, and Zachary Saunders – for their dedication and teamwork, which have been crucial in advancing this project.
 
 ## Disclaimer and Limitation of Liability ⚠️
 
