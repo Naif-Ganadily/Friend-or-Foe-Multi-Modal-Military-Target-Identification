@@ -37,7 +37,8 @@ For showcasing the image/video analysis (detection and segmentation) usage of th
 - TODO
 
 ## License 📄
-- TODO most probably Apache 2.0
+- CC BY-NC-SA 4.0 [Link to the LICENSE.md](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en)
+- [Link to the documentation of the legal license]([https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/blob/main/LICENSE.md))
 
 ## Acknowledgments 👏
 - A special thanks to Professor Radha Poovendran at the University of Washington Seattle, WA for his guidance.
