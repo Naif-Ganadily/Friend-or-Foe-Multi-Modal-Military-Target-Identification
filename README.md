@@ -4,23 +4,22 @@
 ![Friend or Foe Banner](https://github.com/Naif-Ganadily/Friend-or-Foe-Multi-Modal-Military-Target-Identification/assets/103202628/9612e483-3abf-4eee-b812-5fd434df96c2)
 
 ## Overview 🌟
-The "Friend or Foe" project leverages advanced machine learning techniques to accurately identify military personnel in images, classifying them as either friendly or hostile entities. Utilizing a multi-modal approach, this AI-driven system aims to significantly enhance decision-making accuracy in high-pressure military engagements by minimizing the risks associated with misidentification.
+The "Friend or Foe" project, developed by a team from the University of Washington for the course EE P 567: Machine Learning for Cybersecurity, introduces a groundbreaking approach to military target identification using a combination of advanced machine learning models. By leveraging the YOLOv8 algorithm and the Segment Anything Model (SAM), our project offers a robust solution for differentiating between friendly and enemy forces in real-time, aiming to mitigate the risks of friendly fire and enhance operational decision-making on the battlefield.
 
 ## Context 🔍
-In the complex and fast-paced environment of modern warfare, correctly distinguishing between ally and enemy combatants is crucial but challenging due to diverse uniforms and equipment. Our project addresses this challenge by applying cutting-edge image recognition technology to accurately detect and classify military targets based on their visual signatures.
+Modern battlefields present an intricate challenge in target identification due to the utilization of camouflage, guerrilla tactics, and the physical and psychological strains on soldiers. Our solution addresses these challenges by integrating cutting-edge image recognition and segmentation technologies, providing soldiers with an AI-assisted tool that significantly improves accuracy in identifying and classifying military personnel based on their visual signatures. This technology aims to reduce casualties caused by misidentification and augment the effectiveness of military engagements.
 
 ## Project Scope 📐
-- **Inclusion**: Focus on identifying personnel from two distinct military forces, labeled as 'friendly' and 'foe' for the purposes of this project.
-- **Exclusion**: The system is not designed to recognize civilians in military-like attire, differentiate non-combatants from combatants, or identify personnel wearing obsolete or non-standard military uniforms.
+**Inclusion:** Our model focuses on identifying military personnel from the United States and Russian armed forces, differentiating them as 'friendly' or 'foe' for project purposes. This distinction is crucial for training the AI to recognize different uniforms and equipment visually.
+**Exclusion:** The project explicitly does not cover the recognition of civilians in military attire, the distinction between non-combatants and combatants, or identification of individuals in non-standard or obsolete military uniforms.
+**Challenges:** Developing a comprehensive and balanced dataset was a significant challenge, overcome by assembling images from publicly available sources, categorized by military branch. Sophisticated data augmentation techniques and a robust machine learning model were essential in addressing issues such as camouflage and occlusions.
 
-## Challenges 🚧
-- Assembling a comprehensive dataset was achieved by pooling publicly available images, categorized into specific military branches and subsequently narrowed down into two primary classes for simplicity.
-- Overcoming the camouflaging effect and image occlusions involved sophisticated data augmentation techniques and the adoption of a robust machine learning model capable of high-accuracy classification despite these challenges.
+## Technical Approach 🛠
+Utilizing the YOLOv8 and SAM models, our project applies advanced machine learning techniques for real-time object detection and segmentation. The models were trained on a custom dataset of military personnel, focusing on optimizing performance despite the challenges of camouflage and image occlusions. Our methodology included fine-tuning the models to achieve high accuracy in classification tasks, incorporating data augmentation for robustness, and testing under various conditions to ensure reliability and effectiveness in real-world scenarios.
 
 
-## Technical Highlights 💡
-- Dataset Preparation: Utilized Roboflow for dataset augmentation and preprocessing, enhancing the initial set of 1100 images to 2652 through techniques like random rotation, Gaussian blur, and noise addition, ensuring a diverse training set.
-- Model Training: Selected YOLOv8 variants for their balance between speed and accuracy, adapting model training to encompass a range of complexities from simple object detection to intricate segmentation tasks, demonstrating a nuanced understanding of model capabilities.
+## Experimental Results and Analysis 📊
+Our experimentation demonstrated the potential of our AI-driven system to accurately distinguish between friendly and enemy forces, achieving a mean Average Precision (mAP) of 75.7%. These results underline the system's capability to enhance situational awareness and decision-making in military operations. The project also explored the integration of a challenge-response system (CRS) for added security, showcasing the system's adaptability to different operational needs.
 
 ## Proof of Concept
 For showcasing the real-time application usage of the YOLOv8s trained model
